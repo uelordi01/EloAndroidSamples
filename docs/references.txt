@@ -1,0 +1,12 @@
+Basic tutorial:
+
+-> http://developer.android.com/guide/topics/ui/index.html
+
+Good tips:
+-> http://developer.android.com/guide/practices/index.html
+
+How manage the resources:
+->  http://developer.android.com/guide/topics/resources/index.html
+
+Graphics tutorials
+-> http://developer.android.com/guide/topics/graphics/index.html

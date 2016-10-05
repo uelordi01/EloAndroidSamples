@@ -1,0 +1,88 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/playback_frame_layout"
+     >
+
+    <ImageView
+        android:id="@+id/playback_progress_bar_background"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/top_playback_bar" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="horizontal" >
+	
+		    <ImageButton
+		        android:id="@+id/play_button"
+		        android:layout_width="wrap_content"
+		        android:layout_marginTop="7dp"
+		        android:layout_height="40dp"
+		        android:scaleType="fitXY"
+		        android:layout_weight="20"
+		        android:src="@drawable/play_button" />
+		        <ImageButton
+		        android:id="@+id/pause_button"
+		        android:layout_width="wrap_content"
+		        android:layout_marginTop="7dp"
+		        android:layout_height="40dp"
+		        android:scaleType="fitXY"
+		        android:layout_weight="20"
+		        android:src="@drawable/pause_button" />
+		          <ImageButton
+		        android:id="@+id/stop_button"
+		        android:layout_width="wrap_content"
+		        android:layout_marginTop="7dp"
+		        android:layout_height="40dp"
+		        android:scaleType="fitXY"
+		        android:layout_weight="20"
+		        android:src="@drawable/pause_button" />
+
+		        <TextView
+		            android:id="@+id/left_duration"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginTop="10dp"
+		            android:layout_weight="10"
+		            android:text="TextView" />
+		
+		    <SeekBar
+		        android:id="@+id/playback_seek_bar"
+		        style="@style/playbackSeekBar"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="80"
+		        android:max="100"
+		        android:progress="50"
+		        android:secondaryProgress="0" />
+
+		     <TextView
+		         android:id="@+id/right_duration"
+		         android:layout_width="wrap_content"
+		         android:layout_height="wrap_content"
+		         android:layout_marginTop="10dp"
+		         android:layout_weight="5"
+		         android:text="TextView" />
+    
+	</LinearLayout>
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="horizontal" >
+	</LinearLayout>
+<VideoView android:id="@+id/playback_video_view"
+android:layout_height="fill_parent"
+android:layout_width="fill_parent"/>
+</LinearLayout>
+
+
+</FrameLayout>

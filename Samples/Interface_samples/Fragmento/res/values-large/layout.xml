@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="layout_activity_principal_listado" type="layout">@layout/activiti_principal_dos_paneles</item>
+</resources>

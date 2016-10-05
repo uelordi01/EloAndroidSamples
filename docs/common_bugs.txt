@@ -1,0 +1,33 @@
+************************************************************************************
+-----------------------------COMMON ERRORS ----------------------------------------
+************************************************************************************
+Introduction: in this documente we will show you what are the android developing common
+errors while I am coding and learning java android development
+
+Questions: 
+
+Why compiler tell me R.java is not defined?
+
+	res-> posibly you have bad generated files or some xml values are not correctly 
+	defined in the /layout or /strings  or /manifest global file. 
+
+	res-> if your linux is 64 bits, may be you need to install 32 bits libraries to compile: 
+	command-> sudo apt-get install ia32-libs
+
+	res-> you must not add android.R, the R.java will be regenerated for each project.
+
+
+Why do I haven't got permissions to push application in android?
+
+	res-> because you need to start and kill de adb server in platform_tools/ android sdk. 
+	 usefull commands: 	
+	./adb start-server
+	./adb kill-server
+	./adb devices
+	  
+
+
+
+
+
+
